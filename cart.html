@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Buy products</title>
+        <link rel="stylesheet" href="addtocart.css">
+        <link rel="stylesheet" href="products.css">
+        <link rel="stylesheet" href="styleNavBar.css">
+        <link rel="stylesheet" href="stylefooter.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+
+      <div class="header">
+                    
+        <a href="index.html">
+        <img src="logo3.png" alt="Logo">
+      </a>
+    
+
+        <div class="header-right">
+            <a href="SignUp page.html">Sign Up</a>
+            <a href="login.html">Log In</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Quiz.html">Quiz Page</a>
+            <a href="cart.html">Online Store</a>
+            <a href="review.html">Feedbacks</a>
+            
+            
+            <a href="aboutMe.html">About Me</a>
+        </div>
+    </div>
+
+
+
+
+        <div class="body10">
+
+
+        <div>
+            
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+
+        <div class="container1">
+            <div id="root"></div>
+                <div class="sidebar">
+                    <div class="head"><p>My Cart</p></div>
+                        <div id="cartItem">Your cart is empty</div>
+                            <div class="foot">
+                                <h3>Total</h3>
+                                <h2 id="total">$ 0.00</h2>
+                            </div>
+            </div>
+        </div>
+
+
+        <div class="container2">
+
+            <h4>Receive points you got from the quiz to get a discount when placing the order</h4>
+            <br><br>
+            <button class="custom-button" onclick="displayPoints()">Show My Points</button>
+        
+            <div id="result"></div>
+            <br>
+            
+           
+
+            <button class="custom-button" onclick="calculateFinalPrice()">Calculate Final Price</button>
+            <div id="finalPrice"></div>
+
+
+        </div>
+
+        <div class="container2">
+            <form id="f1" action="/action_page.php">
+                <fieldset>
+                    <h4>Please fill out this form to confirm the purchase.</h4>
+
+                    <br>
+
+                    <input type="text" id="name" name="name" placeholder="Name" >
+
+                    <input type="text" id="email" name="email" placeholder="Email" >
+
+                    <input type="text" id="address" name="address" placeholder="Address" >
+
+                </fieldset>
+                <input type="submit" value="Place order">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+        </div>
+
+
+        <script src="addtocart.js"></script>
+
+        <footer>
+          <div class="content">
+            <div class="top">
+              <div class="logo-details">
+                <span class="logo_name">myHealth.com</span>
+              </div>
+      
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="link-boxes">
+              <ul class="box">
+                <li class="link_name">myHealth.com</li>
+                <li><a href="Main Page.html">Home</a></li>
+                <li><a href="SignUp page.html">Sign Up</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Quiz.html">Quiz Page</a></li>
+                <li><a href="cart.html">Online Store</a></li>
+                <li><a href="review.html">Feedbacks</a></li>
+                
+              </ul>
+              <ul class="box">
+                <li class="link_name">Services</li>
+                <li><a href="#">Self-diagnosis</a></li>
+                <li><a href="#">Health record keeper</a></li>
+      
+              </ul>
+              
+       
+              
+              <ul class="box input-box">
+                <li class="link_name">Subscribe To Newsletter</li>
+                <a href="review.html">
+                <li><input type="text" placeholder="Enter your email"></li>
+                <li><input type="button" value="Subscribe"></li>
+              </a>
+              </ul>
+
+            </div>
+          </div>
+          <div class="bottom-details">
+            <div class="bottom_text">
+              <span class="copyright_text">Copyright © 2024 <a href="Main Page.html">myHealth.com</a>All rights reserved</span>
+              <span class="policy_terms">
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms & condition</a>
+              </span>
+            </div>
+          </div>
+        </footer>
+
+        
+    </body>
+</html>

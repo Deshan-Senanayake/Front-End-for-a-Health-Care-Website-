@@ -1,0 +1,22 @@
+<review_menu>
+    <card>
+        <content>"It would be great to have more personalized recommendations for remedies and preventive measures tailored to individual health profiles."</content>
+        <name>- User 1</name>
+    </card>
+    <card>
+        <content>"I found the self-diagnosis feature incredibly helpful! It accurately identified my health issue and provided valuable information on its severity."</content>
+        <name>- User 2</name>
+    </card>
+    <card>
+        <content>"Being able to purchase medical equipment through the application is a game-changer. It saves me time and hassle searching for these items elsewhere."</content>
+        <name>- User 3</name>
+    </card>
+    <card>
+        <content>"The AI-based diagnosis is impressive, but I would like to see more emphasis on encouraging users to seek professional medical advice for confirmation and further treatment."</content>
+        <name>- User 4</name>
+    </card>
+    <card>
+        <content>"The interface is user-friendly, but some additional guidance or explanations on how to interpret the diagnosis results would be beneficial for users who are not familiar with medical terminology."</content>
+        <name>- User 5</name>
+    </card>
+</review_menu>

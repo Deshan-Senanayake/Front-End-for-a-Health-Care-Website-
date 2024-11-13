@@ -1,0 +1,102 @@
+#body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+#listitems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+}
+
+form {
+    width: 300px;
+    padding: 20px;
+}
+
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=reset] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: darkblue;
+}
+
+.list-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+}
+
+.list-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.list-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+#left1 {
+    width: 50%;
+    height: 250vh;
+    float: left;
+    background-color: lightblue;
+    z-index: -1;
+}
+
+#right1 {
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+#left1 ul {
+    margin-top: 150vh;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#right1 form {
+    margin-top: 100px;
+    margin-left: 100px;
+    list-style-type: none;
+    padding-left: 0;
+}

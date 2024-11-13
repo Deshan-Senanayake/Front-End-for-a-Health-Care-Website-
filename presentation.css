@@ -1,0 +1,74 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.centered-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.centered-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.images {
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.txt {
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.images_4 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.my-h1 h1 {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(14, 0, 0), 0 0 25px rgb(16, 16, 1), 0 0 5px rgb(0, 0, 4);
+    text-align: center;
+    font-size: 50px;
+}
+
+#para1 {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(9, 0, 0), 0 0 25px black, 0 0 5px black;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#para2 {
+    margin-top: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgb(9, 0, 0), 0 0 25px black, 0 0 5px black;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#mainPage {
+    display: none;
+}

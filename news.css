@@ -1,0 +1,74 @@
+
+
+/* Style for the main container */
+.border1 {
+  max-width: 600px;
+  
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Style for the form heading */
+#p1 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin: -20px -20px 20px -20px; /* Aligns the background edge to edge */
+}
+
+/* Inputs, Selects, and Textareas styling */
+input[type=text], select, textarea {
+  width: calc(100% - 24px); /* Full width minus padding */
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Makes sure padding doesn't affect width */
+}
+
+/* Label styling */
+
+
+/* Style for the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hover effect for the submit button */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Styling for the form container */
+.container1 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Responsive columns */
+.col-25, .col-75 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Clearfix for rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

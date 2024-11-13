@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    
+    <link rel="stylesheet" href="styleNavBar.css">
+    <link rel="stylesheet" href="stylefooter.css">
+    <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    </head>
+
+        <body>
+
+            <!--================================               Header            ==================================-->
+            <div class="header">
+                    
+              <a href="index.html">
+              <img src="logo3.png" alt="Logo">
+            </a>
+          
+
+              <div class="header-right">
+                  <a href="SignUp page.html">Sign Up</a>
+                  <a href="login.html">Log In</a>
+                  <a href="Gallery.html">Gallery</a>
+                  <a href="Quiz.html">Quiz Page</a>
+                  <a href="cart.html">Online Store</a>
+                  <a href="review.html">Feedbacks</a>
+                  
+                  
+                  <a href="aboutMe.html">About Me</a>
+              </div>
+          </div>
+
+
+              <!--================================               Gallery           ==================================-->
+            <br>
+            <div class="container">
+                    <h2>Gallery</h2>
+                    <br><br>
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div>
+                  <div class="largeImg">
+                    <img src="01.jpg" >
+                    
+                  </div>
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div>
+                  <div class="largeImg">
+                  <img src="doc.avif">
+                </div>
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 6</div>
+                  <div class="largeImg">
+                  <img src="03.jpg">
+                </div>
+                </div>
+                  
+                <div class="mySlides">
+            
+                  <div class="numbertext">4 / 6</div>
+                  <div class="largeImg">
+                  <img src="med.png">
+                  </div>
+              
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">5 / 6</div>
+                  <div class="largeImg">
+                  <img src="inj.png">
+                  </div>
+              
+                </div>
+                  
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+                <br>
+              
+                <br>
+                <div class="row">
+                  
+                  <div class="column">
+                    <img class="demo cursor" src="01.jpg" style="width:100%" onclick="currentSlide(1)" alt="Identify a disease or medical condition based on an evaluation of symptoms, medical history, physical examinations, and diagnostic tests. It involves systematically analyzing clinical data to determine the underlying cause of a patient's illness or health issue. Medical diagnosis is a crucial step in healthcare as it guides treatment decisions, prognostication, and patient management. In modern medicine, diagnosis is often aided by advanced technologies such as medical imaging, laboratory tests, and molecular diagnostics, along with the expertise of healthcare professionals including doctors, nurses, and specialists. Accurate and timely diagnosis is essential for providing effective care and improving patient outcomes. Advances in artificial intelligence and machine learning have also contributed to improving diagnostic accuracy and efficiency by assisting healthcare providers in interpreting complex data and identifying patterns indicative of specific diseases.">
+                    <input type="radio" name="slide" class="radio-btn" onclick="currentSlide(1)">
+                  </div>
+              
+                  <div class="column">
+                    <img class="demo cursor" src="doc.avif" style="width:100%" onclick="currentSlide(2)" alt="A feature designed to streamline appointment scheduling within healthcare facilities. This functionality leverages algorithms to analyze factors like doctor availability, patient demand, and specialist expertise to generate optimized schedules. By matching patients with the most suitable specialist and efficiently allocating doctor's time, this feature aims to reduce wait times, improve patient satisfaction, and optimize resource utilization. Real-time updates and customization options ensure flexibility and responsiveness to changes, ultimately enhancing the overall efficiency of the healthcare system.">
+                    <input type="radio" name="slide" class="radio-btn" onclick="currentSlide(2)">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="03.jpg" style="width:100%" onclick="currentSlide(3)" alt="Health record keeping involves the systematic documentation and management of an individual's medical information throughout their lifetime. This includes details such as medical history, diagnoses, treatments, medications, lab results, and immunization records. The primary purpose of health record keeping is to provide a comprehensive and accurate account of a patient's health status, enabling healthcare providers to make informed decisions about their care. Electronic health record (EHR) systems have revolutionized health record keeping by offering centralized, secure, and easily accessible platforms for storing and sharing patient information among authorized healthcare professionals. Effective health record keeping not only facilitates continuity of care but also supports medical research, public health initiatives, and regulatory compliance. Moreover, it empowers patients to actively participate in their healthcare by granting them access to their own health information and promoting transparency in the healthcare process.">
+                    <input type="radio" name="slide" class="radio-btn" onclick="currentSlide(3)">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="med.png" style="width:100%" onclick="currentSlide(4)" alt="Self-diagnosis refers to the practice of individuals attempting to identify their own medical conditions or ailments without consulting a qualified healthcare professional. While seeking information about symptoms online or using self-assessment tools may provide some insight, self-diagnosis carries significant risks. It often lacks the expertise and context required for accurate interpretation of symptoms, leading to misinterpretation, unnecessary anxiety, and potentially harmful self-treatment. Additionally, relying solely on self-diagnosis may delay or prevent individuals from receiving timely medical intervention, resulting in worsened health outcomes. It's crucial for individuals to recognize the limitations of self-diagnosis and seek guidance from healthcare professionals for accurate assessment, diagnosis, and appropriate treatment tailored to their specific needs.">
+                    <input type="radio" name="slide" class="radio-btn" onclick="currentSlide(4)">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="inj.png" style="width:100%" onclick="currentSlide(5)" alt="Acquiring essential medical equipment such as a blood sugar meter, first aid kit, thermometer, stethoscope, and nebulizer is crucial for maintaining efficient healthcare delivery. These devices serve diverse purposes, ranging from routine health monitoring to emergency care interventions. A blood sugar meter enables individuals to monitor their glucose levels, vital for managing diabetes effectively. A first aid kit provides immediate medical assistance for minor injuries and emergencies. A thermometer aids in assessing body temperature, a fundamental indicator of illness. A stethoscope facilitates auscultation, enabling healthcare providers to listen to internal body sounds for diagnostic purposes. Lastly, a nebulizer delivers medication directly to the lungs, crucial for managing respiratory conditions like asthma. Ensuring the availability and proper functioning of these medical devices is paramount for delivering prompt and effective healthcare interventions.">
+                    <input type="radio" name="slide" class="radio-btn" onclick="currentSlide(5)">
+                  </div>    
+                </div>
+            </div>
+
+
+             <!--================================               Footer          ==================================-->
+
+             <footer>
+              <div class="content">
+                <div class="top">
+                  <div class="logo-details">
+                    <span class="logo_name">myHealth.com</span>
+                  </div>
+          
+                  <div class="media-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+                <div class="link-boxes">
+                  <ul class="box">
+                    <li class="link_name">myHealth.com</li>
+                    <li><a href="Main Page.html">Home</a></li>
+                    <li><a href="SignUp page.html">Sign Up</a></li>
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Quiz.html">Quiz Page</a></li>
+                    <li><a href="cart.html">Online Store</a></li>
+                    <li><a href="review.html">Feedbacks</a></li>
+                    
+                  </ul>
+                  <ul class="box">
+                    <li class="link_name">Services</li>
+                    <li><a href="#">Self-diagnosis</a></li>
+                    <li><a href="#">Health record keeper</a></li>
+          
+                  </ul>
+                  
+           
+                  
+                  <ul class="box input-box">
+                    <li class="link_name">Subscribe To Newsletter</li>
+                    <a href="review.html">
+                    <li><input type="text" placeholder="Enter your email"></li>
+                    <li><input type="button" value="Subscribe"></li>
+                  </a>
+                  </ul>
+  
+                </div>
+              </div>
+              <div class="bottom-details">
+                <div class="bottom_text">
+                  <span class="copyright_text">Copyright © 2024 <a href="Main Page.html">myHealth.com</a>All rights reserved</span>
+                  <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a>
+                  </span>
+                </div>
+              </div>
+            </footer>
+
+            <script src="Gallery.js">
+                
+                </script>
+        </body>
+</html>
