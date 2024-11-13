@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz and query</title>
+    <link rel="stylesheet" href="stylefooter.css">
+    <link rel="stylesheet" href="styleNavBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        
+</head>
+<body>
+
+  <div class="header">
+                    
+    <a href="Main Page.html">
+    <img src="logo3.png" alt="Logo">
+  </a>
+
+
+    <div class="header-right">
+        <a href="SignUp page.html">Sign Up</a>
+        <a href="login.html">Log In</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Quiz.html">Quiz Page</a>
+        <a href="cart.html">Online Store</a>
+        <a href="review.html">Feedbacks</a>
+        
+        
+        <a href="aboutMe.html">About Me</a>
+    </div>
+</div>
+
+      
+    <header>
+        <h1>Quiz & Feedbacks</h1>
+    </header>
+    <main>
+        <section>
+            <h2 Style-align>myHealth Quiz</h2>
+			<button onclick="startQuiz()">Start Quiz</button>
+			<p id="quiz-result" style="display: none;"></p>
+        </section>
+    </main>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var queryTheme = document.getElementById("query-theme").value;
+            
+            if (name.trim() === '' || email.trim() === '' || queryTheme.trim() === '') {
+                alert("Please fill in all compulsory fields.");
+                return false;
+            }
+            return true;
+        }
+
+        function startQuiz() {
+        score = 0;
+        {	
+			let insertedValue=prompt( "What is the most common symptom of the flu?");
+			console.log(insertedValue);
+		
+			let answer=("fever");
+			console.log("Answer:" +answer);
+		
+			score = 0;
+			if(insertedValue == answer){
+				score += 2;
+			}else{
+				score -= 1;
+			}
+        }
+		{	
+			let insertedValue=prompt( "What is the recommended daily water intake for adults?");
+			console.log(insertedValue);
+		
+			let answer=("4 liters");
+			console.log("Answer:" +answer);
+		
+			if(insertedValue == answer){
+				score += 2;
+			}else{
+				score -= 1;
+			}
+        }
+		{	
+			let insertedValue=prompt( "Which nutrient is responsible for building and repairing body tissues?");
+			console.log(insertedValue);
+		
+			let answer=("Proteins");
+			console.log("Answer:" +answer);
+		
+			if(insertedValue == answer){
+				score += 2;
+			}else{
+				score -= 1;
+			}
+        }
+		{	
+			let insertedValue=prompt( "What is the average recommended sleep duration for adults?");
+			console.log(insertedValue);
+		
+			let answer=("7 hours");
+			console.log("Answer:" +answer);
+		
+			if(insertedValue == answer){
+				score += 2;
+			}else{
+				score -= 1;
+			}
+        }
+		{	
+			let insertedValue=prompt( "What is the main function of vitamin D in the body");
+			console.log(insertedValue);
+		
+			let answer=("Strengthen bones");
+			console.log("Answer:" +answer);
+		
+			if(insertedValue == answer){
+				score += 2;
+			}else{
+				score -= 1;
+			}
+        }
+
+        localStorage.setItem('quizPoints', score);
+		
+            var resultText = "You have earned " + score + " points. Please claim the points in your next purchase.";
+            document.getElementById("quiz-result").textContent = resultText;
+            document.getElementById("quiz-result").style.display = "block";
+        }
+    </script>
+	<style>
+  body {
+    font-family: Times New Roman, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	border-color: #1725D7;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+	border-color: #1725D7;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	border-color: #1725D7;
+  }
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	border-color: #1725D7;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button[type="reset"] {
+    background-color: #f44336;
+    margin-right: 10px;
+  }
+  textarea {
+    border-color: #1725D7; /* Changed border color for textarea */
+  }
+</style>
+<title >myHealth.com - Medical Diagnosis and Health Record Keeping</title>
+</head>
+<body>
+<div class="container">
+  <h1>myHealth.com - Medical Diagnosis and Health Record Keeping</h1>
+  <form id="healthForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" > 
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" > 
+    
+    <label for="queryTheme">Query Theme:</label>
+    <select id="queryTheme" name="queryTheme" >
+      <option value="">Select</option>
+      <option value="symptoms">Symptoms</option>
+      <option value="healthReports">Health Reports</option>
+      <option value="other">Other</option>
+    </select>
+    
+    <label for="queryDetails">Query Details:</label>
+    <textarea id="queryDetails" name="queryDetails" ></textarea>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+document.getElementById('healthForm').addEventListener('submit', function(event) {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var queryTheme = document.getElementById('queryTheme').value;
+  
+  // Check if any input fields are empty
+  if (name.trim() === '' || email.trim() === '' || queryTheme.trim() === '') {
+    alert('Please fill in all required fields.');
+    event.preventDefault();
+  }
+});
+
+// Display the summary in an HTML popup window
+function validateForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var queryTheme = document.getElementById('queryTheme').value;
+  var queryDetails = document.getElementById('queryDetails').value;
+  
+  var summary = "Name: " + name + "\nEmail: " + email + "\nSubject: " + queryTheme + "\nDetails: " + queryDetails;
+  alert(summary);
+  return false;
+}
+</script>
+
+<footer>
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+        <span class="logo_name">myHealth.com</span>
+      </div>
+
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">myHealth.com</li>
+        <li><a href="Main Page.html">Home</a></li>
+        <li><a href="SignUp page.html">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Quiz.html">Quiz Page</a></li>
+        <li><a href="cart.html">Online Store</a></li>
+        <li><a href="review.html">Feedbacks</a></li>
+        
+      </ul>
+      <ul class="box">
+        <li class="link_name">Services</li>
+        <li><a href="#">Self-diagnosis</a></li>
+        <li><a href="#">Health record keeper</a></li>
+
+      </ul>
+      
+
+      
+      <ul class="box input-box">
+        <li class="link_name">Subscribe To Newsletter</li>
+        <a href="review.html">
+        <li><input type="text" placeholder="Enter your email"></li>
+        <li><input type="button" value="Subscribe"></li>
+      </a>
+      </ul>
+
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2024 <a href="Main Page.html">myHealth.com</a>All rights reserved</span>
+      <span class="policy_terms">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & condition</a>
+      </span>
+    </div>
+  </div>
+</footer>
+       
+    </body>

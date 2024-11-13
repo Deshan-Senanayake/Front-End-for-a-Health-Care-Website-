@@ -1,0 +1,119 @@
+
+.column p {
+    text-align: center;
+}
+
+.column img {
+    display: block;
+    margin: 0 auto 10px; /* Center the image */
+    border-radius: 5px;
+}
+
+.column p,
+.column select {
+    margin-bottom: 10px;
+}
+
+/* Style the select dropdown */
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Style for the price */
+.column p span {
+    font-weight: bold;
+    color: #007bff; /* Blue color for the price */
+}
+
+
+
+.container2 {
+    width: 65%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+   
+  
+}
+
+
+
+select {
+    width: 20%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.topnav img{
+  float:right
+}
+
+ 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid blue;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+
+input[type=submit],
+input[type=reset] {
+  width: 30%;
+  background-color:blue;
+  color: white;
+  padding: 12px;
+  margin: 10px auto;
+  border: none; 
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+}
+
+input[type=submit]:hover {
+  background-color: darkblue;
+}
